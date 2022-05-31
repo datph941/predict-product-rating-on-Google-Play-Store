@@ -1,0 +1,98 @@
+15
+28
+17
+7  
+31
+42
+24
+8  
+21
+33
+32
+43
+19
+34
+20
+40
+29
+37
+11
+13
+2  
+39
+38
+26
+0  
+3  
+16
+25
+1  
+45
+4  
+5  
+35
+36
+44
+22
+6  
+47
+9  
+41
+18
+46
+14
+10
+27
+23
+12
+30
+Name: Category, dtype: int64
+Education  
+Music & Audio  
+Entertainment  
+Books & Reference  
+Personalization  
+Tools  
+Lifestyle  
+Business  
+Health & Fitness  
+Productivity  
+Photography  
+Travel & Local  
+Finance  
+Puzzle  
+Food & Drink  
+Sports  
+News & Magazines  
+Shopping  
+Casual  
+Communication  
+Arcade  
+Social  
+Simulation  
+Medical  
+Action  
+Art & Design  
+Educational  
+Maps & Navigation  
+Adventure  
+Video Players & Editors  
+Auto & Vehicles  
+Beauty  
+Racing  
+Role Playing  
+Trivia  
+House & Home  
+Board  
+Word  
+Card  
+Strategy  
+Events  
+Weather  
+Dating  
+Casino  
+Music  
+Libraries & Demo  
+Comics  
+Parenting  
+Name: Category, dtype: int64
