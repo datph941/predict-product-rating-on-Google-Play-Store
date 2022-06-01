@@ -3,8 +3,15 @@ from flask import Flask, escape, request, render_template
 import  pickle
 from xgboost import XGBRegressor
 import numpy as np
+# import oss
 
 app = Flask(__name__)
+
+# port
+# port = int(os.environ.get("PORT", 5000))
+
+# app.run(host='0.0.0.0', port=port, debug=True)
+
 model = pickle.load(open('rating_pred_tree', 'rb'))
 model1 = pickle.load(open('rating_pred_xgb', 'rb'))
 
