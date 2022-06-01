@@ -16,3 +16,6 @@ python app.py
 ```
 
 Trỏ trình duyệt của bạn đến http://localhost:5000/ và bạn sẽ thấy thông điệp chào mừng.
+
+### **Lỗi có thể gặp**:
+- Chưa cài các thư viện => xem lỗi trong terminal còn thiếu gì thì cài thêm với trình quản lí gói pip
