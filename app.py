@@ -7,9 +7,8 @@ import numpy as np
 
 app = Flask(__name__)
 
-# port
-# port = int(os.environ.get("PORT", 5000))
 
+# port = int(os.environ.get("PORT", 5000))
 # app.run(host='0.0.0.0', port=port, debug=True)
 
 model = pickle.load(open('rating_pred_tree', 'rb'))
@@ -39,7 +38,7 @@ def home():
         output = float(prediction[0])
         output1 = float(prediction1[0])
         return render_template("result.html", prediction_text=output, prediction_text1=output1, dataInput=dataInput)
-        # return render_template("index.html", prediction_text1="The app is {}".format(output))
+        #return render_template("index.html", prediction_text1="The app is {}".format(output))
     else:
         return render_template('index.html')
 
