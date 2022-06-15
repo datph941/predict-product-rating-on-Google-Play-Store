@@ -16,7 +16,7 @@
             href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet"
         />
-        <title>Predict product rating</title>
+        <title>Team 2 - Predict Mobile App Rating</title>
         <style>
             body {
                 font-family: "Roboto", sans-serif;
@@ -29,7 +29,7 @@
             }
             button[type="submit"] {
                 background-color: #00a173;
-                color: #202124;
+                color: #ffffff;
                 font-weight: 500;
                 width: 150;
                 border: none;
@@ -44,7 +44,7 @@
             }
             button[type="submit"]:hover {
                 background-color: #0e8f6b;
-                color: #202124;
+                color: #ffffff;
                 font-weight: 500;
                 width: 150;
                 border: none;
@@ -71,7 +71,7 @@
             .navbar-brand {
                 font-size: 30px;
                 font-weight: 500;
-                color: #323335;
+                color: #ffffff;
             }
             .banner {
                 display: block;
@@ -114,7 +114,7 @@
                                 class="nav-link active"
                                 aria-current="page"
                                 href="/"
-                                >Home</a
+                                >Trang chủ</a
                             >
                         </li>
                         <!-- <li class="nav-item">
@@ -127,13 +127,17 @@
         </nav>
         <center>
             <h1 class="mt-4 mb-4">
-                Predict product rating on Google Play Store
+                Chương trình dự đoán Rating ứng dụng trên Google Play Store
             </h1>
             <img
                 src="{{url_for('static', filename= '4649292_Cover_PlayStoreRating.jpg')}}"
                 alt=""
                 class="me-2 banner"
             />
+            <h3 class="mt-4 mb-4">
+                <p>GVHD: PGS. TS Nguyễn Đình Thuân</p>
+                <p>KS. Nguyễn Minh Nhựt</p>
+            </h3>
             <div
                 class="accordion"
                 id="accordionExample"
@@ -149,7 +153,7 @@
                             aria-expanded="false"
                             aria-controls="flush-collapseOne"
                         >
-                            #1 Members
+                            #1 Thành viên
                         </button>
                     </h2>
                     <div
@@ -161,16 +165,19 @@
                         <div class="accordion-body">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    19522208 - Nguyễn Hữu Thắng
+                                    Team 2
                                 </li>
                                 <li class="list-group-item">
-                                    19522159 - Hoàng Trí Tâm
+                                    19520457 - Phan Tấn Đạt
                                 </li>
                                 <li class="list-group-item">
-                                    19522215 - Phạm Minh Thắng
+                                    19521879 - Nguyễn Tấn Ngà
                                 </li>
                                 <li class="list-group-item">
-                                    19522xxx - Bành Hoàng Giang
+                                    19521119 - Phạm Bá Vương
+                                </li>
+                                <li class="list-group-item">
+                                    19521364 - Nguyễn Đăng Đô
                                 </li>
                             </ul>
                         </div>
@@ -186,7 +193,7 @@
                             aria-expanded="false"
                             aria-controls="collapseTwo"
                         >
-                            #2 Topic
+                            #2 Đề tài
                         </button>
                     </h2>
                     <div
@@ -196,7 +203,11 @@
                         data-bs-parent="#accordionExample"
                     >
                         <div class="accordion-body">
-                            <h1>Predict product rating on Google Play Store</h1>
+                            <h1>PHÂN TÍCH VÀ DỰ ĐOÁN 
+                                YẾU TỐ THÀNH CÔNG CỦA ỨNG DỤNG 
+                                TRÊN CỬA HÀNG GOOGLE PLAY
+                                VÀ THỊ TRƯỜNG ỨNG DỤNG DI ĐỘNG
+                                </h1>
                         </div>
                     </div>
                 </div>
@@ -210,7 +221,7 @@
                             aria-expanded="false"
                             aria-controls="collapseThree"
                         >
-                            #3 Topic details
+                            #3 Mô tả chương trình
                         </button>
                     </h2>
                     <div
@@ -220,24 +231,22 @@
                         data-bs-parent="#accordionExample"
                     >
                         <div class="accordion-body">
-                            Based on the values of
+                            Dựa trên các thuộc tính
                             <code
                                 >category, rating count, installs, minimum
                                 installs, maximum installs, free, price, size,
                                 minimum android, content rating, ad supported,
                                 in app purchases, editors choice</code
-                            >, we can predict the rating of the product.
+                            >, để đưa ra dự đoán về điểm đánh giá (rating) của ứng dụng.
                         </div>
                     </div>
                 </div>
             </div>
             <p>
-                You needs to input all the information below to predict the
-                rating of the product.
+                Cần nhập đầy đủ các thông tin để có thể đưa ra dự đoán chính xác nhất.
             </p>
             <p>
-                The result will be shown on the next page. We'll not share your
-                information with anyone.
+                Kết quả sẽ được hiển thị ở trên kế tiếp.
             </p>
         </center>
         <!-- action="/"
@@ -252,7 +261,7 @@
                     <legend>Category</legend>
                     <div class="input-group mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Choose the Category of the product</label
+                            >Chọn Danh mục (Category) của ứng dụng</label
                         >
                         <div class="input-group-prepend">
                             <label
@@ -268,7 +277,7 @@
                             required
                         >
                             <option selected disabled value="">
-                                Choose your option
+                                Lựa chọn
                             </option>
                             <option value="0">0 - Action</option>
                             <option value="1">1 - Adventure</option>
@@ -320,16 +329,15 @@
                             <option value="47">47 - Word</option>
                         </select>
                         <div id="emailHelp" class="form-text mt-4">
-                            Choose 1 category to predict the rating of the
-                            product.
+                            Chọn 1 danh mục để tiến hành dự đoán.
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Rating Count</legend>
+                    <legend>Số lượng đánh giá (Rating Count)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Rating Count of the product</label
+                            >Điền vào số lượng đánh giá của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -345,10 +353,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Installs</legend>
+                    <legend>Lượt cài đặt (Installs)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Installs of the product</label
+                            >Điền vào số lượt cài đặt của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -366,10 +374,10 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <legend>Minimum Installs</legend>
+                    <legend>Lượt cài đặt tối thiểu (Minimum Installs)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Minimum Installs of the product</label
+                            >Điền vào số lượt cài đặt tối thiểu của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -385,10 +393,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Maximum Installs</legend>
+                    <legend>Lượt cài đặt tối đa (Maximum Installs)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Maximum Installs of the product</label
+                            >Điền vào số lượt cài đặt tối đa của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -407,7 +415,7 @@
                     <legend>Free</legend>
                     <div class="input-group mb-3">
                         <label for="exampleInputEmail1" class="form-label">
-                            The product you choose is free or not free?
+                            Đây là ứng dụng miễn phí (Free) hay trả phí (Paid)?
                         </label>
                         <div class="input-group-prepend">
                             <label
@@ -423,23 +431,23 @@
                             required
                         >
                             <option selected disabled value="">
-                                Choose your option
+                                Lựa chọn
                             </option>
-                            <option value="1">Free</option>
-                            <option value="0">Not Free</option>
+                            <option value="1">Free (Miễn phí)</option>
+                            <option value="0">Paid (Trả phí)</option>
                         </select>
                         <div id="emailHelp" class="form-text mt-4">
-                            If the product you choose is free? price = 0
+                            Nếu chọn Miễn phí thì giá mặc định sẽ là 0
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <legend>Price</legend>
+                    <legend>Giá (Price)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Price of the product</label
+                            >Điền vào giá của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -451,15 +459,15 @@
                             min="0.0001"
                         />
                         <div id="emailHelp" class="form-text mt-4">
-                            If price = 0, you cannot edit this field.
+                            Giữ nguyên giá bằng 0 nếu đã chọn loại ứng dụng là Miễn phí
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Size</legend>
+                    <legend>Dung lượng (Size)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Size of the product</label
+                            >Điền vào dung lượng của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -475,10 +483,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Minimum Android</legend>
+                    <legend>Phiên bản Android tối thiểu (Minimum Android)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Minimum Android of the product</label
+                            >Điền vào phiên bản Android yêu cầu tối thiểu của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -496,10 +504,10 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <legend>Content Rating</legend>
+                    <legend>Đối tượng người dùng (Content Rating)</legend>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the Content Rating of the product</label
+                            >Điền vào đối tượng người dùng của ứng dụng</label
                         >
                         <input
                             type="text"
@@ -515,10 +523,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <legend>Ad Supported</legend>
+                    <legend>Hỗ trợ quảng cáo (Ad Supported)</legend>
                     <div class="input-group mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >The product you choose is Ad Supported?</label
+                            >Ứng dụng này có hiển thị quảng cáo không?</label
                         >
                         <div class="input-group-prepend">
                             <label
@@ -534,10 +542,10 @@
                             required
                         >
                             <option selected disabled value="">
-                                Choose your option
+                                Lựa chọn
                             </option>
-                            <option value="1">True</option>
-                            <option value="0">False</option>
+                            <option value="1">Có</option>
+                            <option value="0">Không</option>
                         </select>
                         <!-- <div id="emailHelp" class="form-text">
                             We'll never share with anyone else.
@@ -545,10 +553,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <legend>In App Purchases</legend>
+                    <legend>Thanh toán bên trong ứng dụng (In App Purchases)</legend>
                     <div class="input-group mb-3">
                         <label for="exampleInputEmail1" class="form-label"
-                            >Enter the In App Purchases of the product</label
+                            >Ứng dụng này có phương thức thanh toán bên trong ứng dụng không?</label
                         >
                         <div class="input-group-prepend">
                             <label
@@ -564,10 +572,10 @@
                             required
                         >
                             <option selected disabled value="">
-                                Choose your option
+                                Lựa chọn
                             </option>
-                            <option value="1">True</option>
-                            <option value="0">False</option>
+                            <option value="1">Có</option>
+                            <option value="0">Không</option>
                         </select>
                         <!-- <div id="emailHelp" class="form-text">
                             We'll never share with anyone else.
@@ -581,7 +589,7 @@
                     <div class="mb-3">
                         <div class="input-group mb-3">
                             <label for="exampleInputEmail1" class="form-label"
-                                >Enter the Editors Choice of the product</label
+                                >Ứng dụng này có được ban biên tập đánh giá tốt không?</label
                             >
                             <div class="input-group-prepend">
                                 <label
@@ -597,10 +605,10 @@
                                 required
                             >
                                 <option selected disabled value="">
-                                    Choose your option
+                                    Lựa chọn
                                 </option>
-                                <option value="1">True</option>
-                                <option value="0">False</option>
+                                <option value="1">Có</option>
+                                <option value="0">Không</option>
                             </select>
                             <!-- <div id="emailHelp" class="form-text">
                             We'll never share with anyone else.
@@ -616,7 +624,7 @@
             </div>
             <!-- <button id="liveToastBtn">Check all the fields</button> -->
             <button type="submit" class="btn btn-primary" id="liveToastBtn">
-                Submit
+                Xác nhận
             </button>
         </form>
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -633,8 +641,8 @@
                         class="me-2"
                         alt="Google Play Store"
                     />
-                    <strong class="me-auto"> Error </strong>
-                    <small> a few seconds ago </small>
+                    <strong class="me-auto"> Lỗi </strong>
+                    <small> thực hiện lại </small>
                     <button
                         type="button"
                         class="btn-close"
@@ -643,7 +651,7 @@
                     ></button>
                 </div>
                 <div class="toast-body">
-                    Please fill all the fields before submitting
+                    Điền đầy đủ thông tin trước khi bấm XÁC NHẬN
                 </div>
             </div>
         </div>

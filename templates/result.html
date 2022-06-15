@@ -10,7 +10,7 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
         />
-        <title>Result predict product rating</title>
+        <title>Team 2 - Result</title>
         <style>
             body {
                 font-family: "Roboto", sans-serif;
@@ -22,7 +22,7 @@
             .navbar-brand {
                 font-size: 30px;
                 font-weight: 500;
-                color: #323335;
+                color: #ffffff;
             }
             /* .me-2 {
                 width: 30px;
@@ -33,7 +33,7 @@
             }
             .btn-continue {
                 background-color: #00a173;
-                color: #202124;
+                color: #ffffff;
                 font-weight: 500;
                 width: 150;
                 border: none;
@@ -50,7 +50,7 @@
             }
             .btn-continue:hover {
                 background-color: #0e8f6b;
-                color: #202124;
+                color: #ffffff;
                 font-weight: 500;
                 width: 150;
                 border: none;
@@ -94,7 +94,7 @@
                                 class="nav-link active"
                                 aria-current="page"
                                 href="/"
-                                >Home</a
+                                >Trang chủ</a
                             >
                         </li>
                         <!-- <li class="nav-item">
@@ -107,58 +107,58 @@
         </nav>
         <center>
             <h1 class="mt-4 mb-4">
-                Result predict product rating on Google Play Store
+                Kết quả dự đoán
             </h1>
             <div class="labelInfo">
-                <span class="badge text-bg-success">> 4 Star</span>
+                <span class="badge text-bg-success">> 4 Sao</span>
                 <span class="badge text-bg-primary"
-                    >> 3.5 Star and < 4 Star</span
+                    >> 3.5 Sao và < 4 Sao</span
                 >
-                <span class="badge text-bg-danger">< 3.5 Star</span>
+                <span class="badge text-bg-danger">< 3.5 Sao</span>
             </div>
         </center>
         <div class="container">
             {% if prediction_text > 4 %}
             <div class="alert alert-success" role="alert">
-                The rating of the product based on Decision Tree algorithm is
+                Kết quả dự đoán dựa trên thuật toán Cây quyết định là
                 <b>{{prediction_text}}</b>
             </div>
             {% elif prediction_text > 3.5 and prediction_text < 4 %}
             <div class="alert alert-primary" role="alert">
-                The rating of the product based on Decision Tree algorithm is
+                Kết quả dự đoán dựa trên thuật toán Cây quyết định là
                 <b>{{prediction_text}}</b>
             </div>
             {% else %}
             <div class="alert alert-danger" role="alert">
-                The rating of the product based on Decision Tree algorithm is
+                Kết quả dự đoán dựa trên thuật toán Cây quyết định là
                 <b>{{prediction_text}}</b>
             </div>
             {% endif %} {% if prediction_text1 > 4 %}
             <div class="alert alert-success" role="alert">
-                The rating of the product based on XGB Regressor algorithm is
+                Kết quả dự đoán dựa trên thuật toán XGB Regressor là
                 <b> {{prediction_text1}}</b>
             </div>
             {% elif prediction_text1 > 3.5 and prediction_text1 < 4 %}
             <div class="alert alert-primary" role="alert">
-                The rating of the product based on XGB Regressor algorithm is
+                Kết quả dự đoán dựa trên thuật toán XGB Regressor là
                 <b>{{prediction_text1}}</b>
             </div>
             {% else %}
             <div class="alert alert-danger" role="alert">
-                The rating of the product based on XGB Regressor algorithm is
+                Kết quả dự đoán dựa trên thuật toán XGB Regressor là
                 <b>{{prediction_text1}}</b>
             </div>
             {% endif %}
         </div>
         <center>
-            <legend>The values you have selected</legend>
+            <legend>Giá trị đã nhập vào</legend>
             <div class="m-4 g-4" style="width: 1300px">
                 <table class="table table-dark table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Label</th>
-                            <th scope="col">Value</th>
+                            <th scope="col">Thuộc tính</th>
+                            <th scope="col">Giá trị</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -231,7 +231,7 @@
                 </table>
             </div>
         </center>
-        <a href="/" class="btn btn-continue">Try with other values</a>
+        <a href="/" class="btn btn-continue">Thử lại với bộ giá trị khác</a>
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div
                 id="liveToast"
@@ -246,8 +246,8 @@
                         class="me-2"
                         alt="Google Play Store"
                     />
-                    <strong class="me-auto"> Success </strong>
-                    <small> a few seconds ago </small>
+                    <strong class="me-auto"> Thành công </strong>
+                    <small> đã dự đoán kết quả rating thành công </small>
                     <button
                         type="button"
                         class="btn-close"
@@ -255,7 +255,7 @@
                         aria-label="Close"
                     ></button>
                 </div>
-                <div class="toast-body">See the prediction results.</div>
+                <div class="toast-body">Xem kết quả dự đoán</div>
             </div>
         </div>
     </body>
